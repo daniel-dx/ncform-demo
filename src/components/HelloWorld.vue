@@ -16,17 +16,36 @@ export default {
       formSchema: {
         type: "object",
         properties: {
+          // standard component: input
           name: {
-            type: "string"
+            type: "string",
+            ui: {
+              columns: 6
+            },
+            rules: {
+              required: true,
+              myCustom: {
+                // your custom rule
+                value: "daniel",
+                errMsg: 'Fill in "daniel" pls'
+              }
+            }
           },
+          // custom widget: my-custom-comp
           custom: {
             type: "string",
             ui: {
+              columns: 6,
               widget: "my-custom-comp",
               widgetConfig: {
                 msg: "hi"
               }
             }
+          }
+        },
+        ui: {
+          widgetConfig: {
+            layout: "h"
           }
         }
       }
@@ -36,6 +55,7 @@ export default {
     submit() {
       this.$ncformValidate("your-form-name").then(data => {
         if (data.result) {
+          alert(JSON.stringify(this.$data.formSchema.value, null, 2));
           console.log(this.$data.formSchema.value);
           // do what you like to do
         }

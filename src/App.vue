@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <a target="_blank" href="https://github.com/ncform/ncform"
+      ><img alt="Vue logo" src="./assets/logo.png"
+    /></a>
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
