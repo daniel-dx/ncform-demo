@@ -4,8 +4,8 @@
       >This is a custom form widget: {{ $t("hi", { name: mergeConfig.name }) }}
     </label>
 
-    <!-- disabled / readonly / placeholder / hidden : use the computed version, not the config version. defined in controlMixin -->
-    <!-- modelVal: for binding value. defined in controlMixin -->
+    <!-- disabled / readonly / placeholder / hidden : use the computed version, not the config version. -->
+    <!-- modelVal: for binding value. -->
     <input
       :disabled="disabled"
       :readonly="readonly"
