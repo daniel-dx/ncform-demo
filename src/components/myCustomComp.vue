@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       defaultConfig: {
-        // your config's default value（Note: use mergeConfig when use config value）
+        // your config's default value ( Note: use mergeConfig to get config value )
         name: "daniel"
       }
     };

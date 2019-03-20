@@ -38,7 +38,7 @@ export default {
               columns: 6,
               widget: "my-custom-comp",
               widgetConfig: {
-                msg: "hi"
+                name: "daniel" // try "dx: {{$root.name}}" and fill in the name input
               }
             }
           }
