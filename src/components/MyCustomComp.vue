@@ -1,7 +1,8 @@
 <template>
   <div class="my-custom-comp">
     <label
-      >This is a custom form widget: {{ $t("hi", { name: mergeConfig.name }) }}
+      >This is a custom form widget:
+      {{ $nclang("hi", { name: mergeConfig.name }) }}
     </label>
 
     <!-- disabled / readonly / placeholder / hidden : use the computed version, not the config version. -->
