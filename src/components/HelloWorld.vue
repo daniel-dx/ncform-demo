@@ -6,7 +6,9 @@
       v-model="formSchema.value"
       @submit="submit()"
     ></ncform>
-    <el-button @click="submit()">Submit</el-button>
+    <div style="text-align: center">
+      <el-button @click="submit()">Submit</el-button>
+    </div>
   </div>
 </template>
 <script>
@@ -20,7 +22,8 @@ export default {
           name: {
             type: "string",
             ui: {
-              columns: 6
+              columns: 6,
+              description: "Type anything to test the custom rule"
             },
             rules: {
               required: true,
