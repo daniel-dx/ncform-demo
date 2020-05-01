@@ -9,9 +9,9 @@
     "check": "npm-check -u -p"
   },
   "dependencies": {
-    "@ncform/ncform": "^1.4.0",
-    "@ncform/ncform-common": "^1.4.0",
-    "@ncform/ncform-theme-elementui": "^1.4.0",
+    "@ncform/ncform": "^1.7.0",
+    "@ncform/ncform-common": "^1.7.0",
+    "@ncform/ncform-theme-elementui": "^1.7.0",
     "axios": "^0.19.0",
     "element-ui": "^2.11.1",
     "vue": "^2.6.10"
